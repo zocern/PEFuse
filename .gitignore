@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Pycharm
+.idea
+
+# Python
+__pycache__/
+*.pyc
+
+# logs
+*.log
