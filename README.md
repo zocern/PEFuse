@@ -3,6 +3,7 @@
 [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 [![PyTorch 2.1.1](https://img.shields.io/badge/PyTorch-2.1.1-red.svg)](https://pytorch.org/)
 [![CUDA 11.8](https://img.shields.io/badge/CUDA-11.8-green.svg)](https://developer.nvidia.com/cuda-11-8-0-download-archive)
+[![DOI](https://img.shields.io/badge/DOI-10.1109/TAES.2026.3673305-blue)](https://ieeexplore.ieee.org/document/11431120)
 
 Official implementation of the paper **"PEFuse: Progressive Emphasis of Dual-Frequency Feature for Infrared and Visible Image Fusion"**, published in *IEEE Transactions on Aerospace and Electronic Systems (TAES)*.
 
@@ -26,7 +27,6 @@ pip install torch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 --index-url https
 pip install -r requirements.txt
 ```
 
-
 ## Quick Start
 
 ```bash
@@ -44,7 +44,6 @@ python inference.py \
   --vi_chans 3
 ```
 
-
 ## Results
 
 The fused results will be automatically saved in the `result/PEFuse_{args.dataset}/` directory. For the example above, you can find the output images in `result/PEFuse_MaritimeShip/`.
@@ -58,3 +57,21 @@ The fused results will be automatically saved in the `result/PEFuse_{args.datase
 <p align="center">
   <em>From left to right: Infrared image, Visible image, and our Fused result.</em>
 </p>
+
+## Citation
+
+If you find this code or our [paper](https://ieeexplore.ieee.org/document/11431120) useful for your research, please consider citing our work:
+
+**Plain Text:**
+> Z. Xu et al., "PEFuse: Progressive Emphasis of Dual-Frequency Feature for Infrared and Visible Image Fusion," in IEEE Transactions on Aerospace and Electronic Systems, vol. 62, pp. 7881-7895, 2026, doi: 10.1109/TAES.2026.3673305.
+
+**BibTeX:**
+```bibtex
+@ARTICLE{xu2026pefuse,
+  author={Xu, Zhaocheng and Huang, Guoheng and Yuan, Xiaochen and Ng, Alex Hay-Man and Ling, Wing-Kuen and Li, Ming and Cheng, Lianglun and Pun, Chi-Man},
+  journal={IEEE Transactions on Aerospace and Electronic Systems}, 
+  title={PEFuse: Progressive Emphasis of Dual-Frequency Feature for Infrared and Visible Image Fusion}, 
+  year={2026},
+  volume={62},
+  pages={7881-7895},
+  doi={10.1109/TAES.2026.3673305}}
